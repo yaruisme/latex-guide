@@ -1,0 +1,56 @@
+\documentclass{ctexart}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\begin{document}
+%l 左对齐
+%c 居中对齐
+%r 右对齐
+%p{1.5cm} 设置列宽度
+%p{1.5cm \c} 设置列宽度 并且剧中
+% \\表示换行
+% & 分割列
+% 
+%\begin{tabular}[<垂直对齐方式>]{<列格式说明符>}
+\begin{table}
+    \centering
+    \begin{tabular}{|p{2.5cm \c}| c | c | c | r|}
+        \hline
+        姓名 & 年龄 & 性别 & 身高 & 体重 \\
+        \hline
+        \hline
+        江浩 & 31  &  男 & 168 & 69 Kg\\
+        \hline
+    \end{tabular}
+    \caption{个人信息表}
+\end{table}
+
+
+\begin{table}	
+	\centering
+	\begin{subtable}[t]{2in}
+		\centering
+		\begin{tabular}{|l|l|l|}
+		\hline
+		100 & 200 & 300\\
+		\hline
+		400 & 500 & 600\\
+		\hline
+		\end{tabular}
+		\caption{标题1}\label{table:1a}
+	\end{subtable}
+	\quad
+	\begin{subtable}[t]{2in}
+		\centering
+		\begin{tabular}{|l|l|l|}
+		\hline
+		100 & 200 & 300\\
+		\hline
+		400 & 500 & 600\\
+		\hline
+		\end{tabular}
+		\caption{标题2}\label{table:1b}
+	\end{subtable}
+	\caption{主表标题}\label{table:1}
+\end{table}
+\end{document}

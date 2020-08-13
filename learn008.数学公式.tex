@@ -1,0 +1,156 @@
+%导言区
+\documentclass{ctexart}
+%罗马数字
+\usepackage{amssymb}
+\makeatletter
+\newcommand{\rmnum}[1]{\romannumeral #1}
+\newcommand{\Rmnum}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+%希腊字母
+\usepackage{unicode-math}
+\usepackage{amsmath}
+%大写空心粗体字母
+\usepackage{amsfonts}
+\begin{document}
+    \section{简介}
+    \LaTeX 将排版内容分为文本模式和数学模式
+
+        \section{行内公式}
+        \subsection{美元符号}
+        交换律是 $a+b=b+a$,如$1+2=2+1=3$
+        \subsection{小括号}
+        交换律是 \(a+b=b+a\),如\(1+2=2+1=3\)
+        \subsection{math环境}
+        交换律是 \begin{math}a+b=b+a\end{math},如\begin{math}1+2=2+1=3\end{math}
+
+        \section{上下标}
+
+        \subsection{上标}
+        $3x^{20} - x + 2 = 0$
+        
+        公式作为上标
+        $3x^{xy^{20}-x+2} - x + 2 = 0$
+
+        \subsection{下标}
+        $a_0,a_1,a_2,a_3, ... a_{99},a_{100}$
+
+        \section{罗马数字}
+        \rmnum{1}
+        
+        \rmnum{2} 
+        
+        \rmnum{3}
+        
+        \rmnum{4}
+
+        \rmnum{5}
+
+        \Rmnum{1} \Rmnum{2} \Rmnum{3} \Rmnum{4} \Rmnum{5} \Rmnum{6}
+        \section{希腊字母}
+        \begin{table}[h]
+            \centering
+            \begin{tabular}{|c|c|c|c|}
+                \hline
+                小写形式	& 代码	& 大写形式	& 代码\\
+                \hline
+                $\alpha$ &\textbackslash alpha& $\Alpha$ &  \textbackslash Alpha\\
+                \hline
+                $\beta$ & \textbackslash beta & $\Beta$ & \textbackslash Beta\\
+                \hline
+                $\gamma$ & \textbackslash gamma & $\Gamma$ &  \textbackslash Gamma\\
+                \hline
+                $\delta$ & \textbackslash delta & $\Delta$ & \textbackslash Delta\\
+                \hline
+                $\epsilon$ & \textbackslash epsilon & $\Epsilon$ & \textbackslash Epsilon\\
+                \hline
+                $\zeta$ & \textbackslash zeta & $\Zeta$ & \textbackslash Zeta\\
+                \hline
+                $\eta$ & \textbackslash eta & $\Eta$ & \textbackslash Eta\\
+                \hline
+                $\theta$ & \textbackslash theta & $\Theta$ & \textbackslash Theta\\
+                \hline
+                $\iota$ & \textbackslash iota & $\Iota$ & \textbackslash Iota\\
+                \hline
+                $\kappa$ & \textbackslash kappa & $\Kappa$ & \textbackslash Kappa\\
+                \hline
+                $\lambda$ & \textbackslash lambda & $\Lambda$ & \textbackslash Lambda\\
+                \hline
+                $\mu$ & \textbackslash mu & $\Mu$ & \textbackslash Mu\\
+                \hline
+                $\nu$ & \textbackslash nu & $\Nu$ & \textbackslash Nu\\
+                \hline
+                $\xi$ & \textbackslash xi & $\Xi$ & \textbackslash Xi\\
+                \hline
+                $\omicron$ & \textbackslash omicron & $\Omicron$ & \textbackslash Omicron\\
+                \hline
+                $\pi$ & \textbackslash pi & $\Pi$ & \textbackslash Pi\\
+                \hline
+                $\rho$ & \textbackslash rho & $\Rho$ & \textbackslash Rho\\
+                \hline
+                $\sigma$ & \textbackslash sigma & $\Sigma$ & \textbackslash Sigma\\
+                \hline
+                $\tau$ & \textbackslash tau & $\Tau$ & \textbackslash Tau\\
+                \hline
+                $\upsilon$ & \textbackslash tau & $\Upsilon$ & \textbackslash Upsilon\\
+                \hline
+                $\phi \varphi$ & \textbackslash phi \textbackslash varphi & $\Phi \varPhi$ & \textbackslash Phi \textbackslash varPhi\\
+                \hline
+                $\chi $ & \textbackslash chi \textbackslash Chi & $\Chi$ & \textbackslash Chi \\
+                \hline
+                $\psi $ & \textbackslash psi \textbackslash Psi & $\Psi$ & \textbackslash Psi \\
+                
+                \hline
+            \end{tabular}
+        \end{table}
+
+        $\alpha$ $\beta$ $\gamma$ $\epsilon$
+    
+
+        $\pi$ $\omega$ $\delta$
+        
+        $\Gamma$ $\Delta$ $\Theta$ $\Pi$ $\Omega$
+        
+        \section{数学函数}
+        $\log$
+        $\sin$
+        $\cos$
+        $\arccos$
+        $\arcsin$
+
+        $\sqrt[3]{4}$
+        $\sqrt{4+\sqrt{2}}$
+        
+        \section{分式}
+        
+        大约是原体积的 $3/4$
+        大约是原体积的 $\frac{3}{4}$
+        
+        $\frac{\sqrt{5}}{\arccos{45}}$
+        \section{行间公式}
+            \subsection{美元符号}
+            交换律是
+            $$a+b=b+a$$
+            如$$1+2=2+1=3$$
+            \subsection{中括号}
+            交换律是
+            \[a+b=b+a\]
+            如\[1+2=2+1=3\]
+            \subsection{dislpaymath环境}
+            交换律是
+            \begin{displaymath}
+            a+b=b+a
+            \end{displaymath}
+            如
+            \begin{displaymath}
+                1+2=2+1=3
+            \end{displaymath}
+            \subsection{自动编号公式equation环境}
+                \begin{equation}
+                    a+b = b+a
+                \end{equation}
+            \subsection{不编号公式equation*环境}
+                \begin{equation*}
+                    a+b = b+a    
+                \end{equation*}    
+\end{document}

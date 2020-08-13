@@ -1,0 +1,24 @@
+%导言区
+%用于确定文档类型
+%article book report letter beamer
+%使用 ctexart ctexbook ctexrep ctexbeamer
+%就不需要 \usepackage ctex了
+\documentclass[UTF8]{article}
+\usepackage{a4}
+\usepackage{ctex}
+%定义新命令
+\newcommand\degree{^\circ}
+\newcommand{\cwfont}{\ttfamily{\textbf{}}}
+
+\title{ Latex学习}
+\author{JiangHao}
+\date{\today}
+%正文区
+\begin{document}
+    \maketitle
+    设有三角形ABC 其中 C=90$\degree$
+    \begin{equation}%待编号的行间公式
+        AB^2 = BC^2 + AC^2
+    \end{equation}
+
+\end{document}

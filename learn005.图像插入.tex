@@ -1,0 +1,27 @@
+%导言区
+\documentclass{ctexart}
+
+%导言区 插入%\usepackage{graphicx} 
+%语法 \includegraphics[选项]{文件名}
+%格式 EPS PDF PNG JPEG BMP
+\usepackage{graphicx}
+
+
+%可以设置多个路径
+\graphicspath{{figures/},{imgs/}} %图片在当前目录下的figures目录
+
+\begin{document}
+    \LaTeX{}中插图
+    \includegraphics[scale=0.2]{lua.jpg}
+
+    \includegraphics[width=1cm]{lua.jpg}
+
+    \includegraphics[height=3cm]{timg}
+
+    %textheight
+    这又是个什么\includegraphics[height=0.1\textheight]{timg}??
+
+    嘿嘿\includegraphics[width=0.1\textwidth]{lua.jpg}这是文本呀
+
+
+\end{document}

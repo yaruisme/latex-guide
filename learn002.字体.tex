@@ -1,0 +1,78 @@
+\documentclass[UTF8]{article}
+\usepackage{a4}
+\usepackage{ctex}
+\newcommand{\cwfont}{\ttfamily{\textbf{}}}
+
+\title{ Latex学习}
+\author{JiangHao}
+\date{\today}
+%正文区
+\begin{document}
+    %字体族设置（罗马字体、无衬线字体、打字机字体）
+    \textrm{Roman Famliy} 
+    %无衬线字体
+    
+    \textsf{Sans Serif Family} 
+    %打字机字体
+
+    \texttt{Typewriter Family}
+
+    \texttt{打字机}
+
+    \rmfamily %罗马字体 后续字体使用罗马字体
+    This Roman Famliy
+
+    \sffamily
+    I like this style!
+
+    \ttfamily
+    Type Writer Font Famliy
+
+    {\rmfamily this area is Roman Famliy}
+    
+    Then back to type writer Famliy.
+
+    %字体系列设置（粗细宽度）
+    \textmd {Medium Series}
+    
+    \textbf {Boldface Series}
+
+    {\mdseries Medium Series}
+    {\bfseries Boldface Series}
+
+    {\upshape Upright Shape}
+
+    {\itshape Italic Shape}
+
+    {\slshape Slanted Shape}
+    
+    {\scshape Small Capes Shape}
+
+    %中文字体
+    {\songti 宋体}\quad
+    {\heiti 黑体}\quad
+    {\fangsong 仿宋}\quad
+    {\kaishu 楷书}\quad
+    中文字体\textbf{粗体}与\textit{斜体}
+
+    字体大小\\
+    {\tiny Hello}\\
+    {\scriptsize Hello}\\
+    {\footnotesize Hello}\\
+    {\small Hello}\\
+    {\normalsize Hello}\\
+    {\large Hello}\\
+    {\Large Hello}\\
+    {\LARGE Hello}\\
+    {\huge Hello}\\
+    {\Huge Hello}\\
+    
+    %中文字号
+    用texdoc ctex查看中文字号
+    \zihao{-0} 小初 |
+    \zihao{0} 初号 |
+    \zihao{1} 小初 |
+    \zihao{5} 五号 |
+    
+    \cwfont My Self Font
+\end{document}

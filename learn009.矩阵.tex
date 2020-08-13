@@ -1,0 +1,65 @@
+%导言区
+\documentclass{ctexart}
+%罗马数字
+\usepackage{amssymb}
+\makeatletter
+\newcommand{\rmnum}[1]{\romannumeral #1}
+\newcommand{\Rmnum}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+%希腊字母
+\usepackage{unicode-math}
+\usepackage{amsmath}
+%大写空心粗体字母
+\usepackage{amsfonts}
+\begin{document}
+    \[
+        \begin{matrix}
+            0 & 1\\
+            1 & 2
+        \end{matrix}\qquad
+        \begin{vmatrix}%竖线
+            0 & 1\\
+            1 & 2
+        \end{vmatrix}\qquad
+        \begin{bmatrix}%中括号
+            0 & 1\\
+            1 & 2
+        \end{bmatrix}\qquad
+        \begin{Bmatrix}%大括号
+            0 & 1\\
+            1 & 2
+        \end{Bmatrix}\qquad
+        \begin{pmatrix}%小括号
+            0 & 1\\
+            1 & 2
+        \end{pmatrix}\qquad
+        \begin{Vmatrix}%双竖线
+            0 & 1\\
+            1 & 2
+        \end{Vmatrix}%
+    \]
+    
+    %竖线
+    \[    
+    A=\begin{pmatrix}%小括号
+            a_{1}^1 & a_{2}^2\\
+            a_{3}^3 & a_{4}^4
+    \end{pmatrix}
+    \]
+
+    %竖线
+    \[    
+    A=\begin{pmatrix}%小括号
+            a_{1}^1 & \dots & a_{2}^2\\
+             & \ddots & \vdots \\
+            a_{3}^3 &  & a_{4}^4
+    \end{pmatrix}
+    \]
+    
+    \[
+        \Large{o}
+        \qquad
+        \text{\Large{o}}
+    \]
+\end{document}

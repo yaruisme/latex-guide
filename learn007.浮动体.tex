@@ -1,0 +1,49 @@
+%导言区
+\documentclass{ctexart}
+\usepackage{texnames}
+\usepackage{xltxtra}
+\usepackage{caption}
+\usepackage{subcaption}
+
+%导言区 插入%\usepackage{graphicx} 
+%语法 \includegraphics[选项]{文件名}
+%格式 EPS PDF PNG JPEG BMP
+\usepackage{graphicx}
+
+
+%可以设置多个路径
+\graphicspath{{figures/},{imgs/}} %图片在当前目录下的figures目录
+
+\begin{document}
+    
+    \LuaTeX{}
+
+    \LaTeX{}中插图
+
+    可以看见下面中图\ref{fig-logo}示例。
+    % htbp 浮动体排版位置
+    \begin{figure}[htbp]
+        \centering
+        \caption{ \LuaTeX 图标--Logo}\label{fig-logo}
+        \includegraphics[scale=0.2]{lua.jpg}
+    \end{figure}
+
+    %textheight
+    这又是个什么\includegraphics[height=0.1\textheight]{timg}??
+
+    嘿嘿\includegraphics[width=0.1\textwidth]{lua.jpg}这是文本呀
+
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{|p{2.5cm \c}| c | c | c | r|}
+            \hline
+            姓名 & 年龄 & 性别 & 身高 & 体重 \\
+            \hline
+            \hline
+            江浩 & 31  &  男 & 168 & 69 Kg\\
+            \hline
+        \end{tabular}
+        \caption{个人信息表}
+    \end{table}
+
+\end{document}

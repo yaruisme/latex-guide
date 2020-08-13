@@ -1,0 +1,107 @@
+\documentclass{article}
+\usepackage{ctex}
+\usepackage{texnames}
+\usepackage{xltxtra}
+\usepackage{mflogo}
+\begin{document}
+    \section{空白符号}
+    %禁止
+    %1em空白
+    a\quad b
+
+    %2em空白
+    a\qquad b
+
+    %约为1/6个em
+    a\,b a\thinspace b
+    
+    %0.5个em
+    a\enspace b
+    % 空格
+    a\ b
+
+    %硬空格 不能分割的空白
+    a~b
+
+    %1pc = 12pt = 4.218mm
+
+    a\kern  1pc b
+
+    a\kern -1em b
+
+    a\hskip 1em b
+
+    a\hspace{35pt}b
+
+    %占位宽度
+
+    a\hphantom{xyz}b
+
+    %弹性长度 最大宽度
+    a\hfill b
+
+    \section{\LaTeX 控制符}
+
+    \# \$ \% \{ \}
+    \~{} \_{} \^{}  \&
+    文本\\中间 %换行
+    \textbackslash
+
+    \section{排版符号}
+
+    \S \P \dag \ddag \copyright \pounds
+
+    \section{\TeX 标志符号}
+    
+    \TeX{} 
+    
+    \LaTeX{} 
+    
+    \LaTeXe{} 
+
+    %texnames
+    %\AmSTeX{} \BibTex{} %需要xelatex
+    \AmSTeX{}
+    
+    %\BibTex{}
+
+    \AmS-\LaTeX{}
+
+    \LuaTeX{}
+
+    \BibTeX{}
+
+    \XeLaTeX{} %
+
+    %mflogo宏包
+
+    \METAFONT{}
+
+    \MF{}
+
+    \MP{}
+
+    %引号
+    \section{引号}
+    `' ``'' ``你好''
+
+    \section{连字符}
+    - -- ---
+
+    \section{非英文字符}
+    \oe  \OE  \ae  \AE  \aa  \AA  \o  \O 
+
+    \l \L \ss \SS !` ?`
+    
+    \section{重音符号}
+    \`o \'o \^o \''o 
+    
+    \~o \=o \.o \u{o}
+    
+    \v{o} \H{o}
+    
+    \r{o} \t{o} \b{o}
+
+    \c{o} \d{o}
+
+\end{document}
